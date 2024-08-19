@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Dashboard from "./components/dashboard/Dashboard";
+import Directory from "./components/directory/Directory";
+import File from "./components/fileUpload/File";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="header">
+        <h2>Suprabhatam Attendance Software</h2>
+      </div>
+      <div className="container">
+        <div className="main-container">
+          <Dashboard />
+          <Directory />
+          <File />
+        </div>
+      </div>
+    </>
   );
 }
-
 export default App;

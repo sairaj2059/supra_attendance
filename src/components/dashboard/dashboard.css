@@ -1,0 +1,65 @@
+.dashboard_container {
+  border-right: 1px solid black;
+  width: 20%;
+  border-right: 1px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 20px;
+  background-color: rgb(135, 241, 241);
+  overflow: scroll;
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom:10%;
+
+    .year {
+      justify-self: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: deepskyblue;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .months{
+      display: none;
+    }
+    .month{
+      display: flex;
+    } 
+    .month-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5px;
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      background-color: rgb(110, 110, 220);
+      transform: translateY(100%);
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    .section.expanded .months{
+      display: block;
+    }
+
+    .arrow {
+      margin-left: 17%;
+      width: 50px;
+      height: 50px;
+      border-left: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+  }
+}
